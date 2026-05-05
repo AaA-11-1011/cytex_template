@@ -18,12 +18,12 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: src/main.tex
-          # latexmk に任せる設定（引数は不要になります）
+          root_file: main.tex
+          # latexmk に任せる設定
           compiler: latexmk
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: PDF
-          path: src/main.pdf
+          path: main.pdf
