@@ -16,8 +16,5 @@ $bibtex = 'pbibtex %O %S';
 $makeindex = 'mendex %O -o %D %S';
 $dvipdf = 'dvipdfmx %O -o %D %S';
 
-# Output directory
-$out_dir = 'out';
-
 # Allow magic comments in .tex files (e.g., % !TEX program = xelatex)
 $allow_switch_engine = 1;
