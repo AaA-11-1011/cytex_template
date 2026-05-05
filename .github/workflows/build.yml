@@ -17,8 +17,9 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-          # latexmk に任せる設定
-          compiler: latexmk
+          # latexmk を使わず直接 lualatex でビルドする
+          compiler: lualatex
+          args: "-synctex=1 -interaction=nonstopmode -file-line-error"
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
