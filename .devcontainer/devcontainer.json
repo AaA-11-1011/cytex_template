@@ -20,21 +20,21 @@
                 "ltex.language": "ja-JP",
                 "latex-workshop.latex.recipes": [
                     {
-                        "name": "lualatex",
+                        "name": "latexmk (auto)",
                         "tools": [
-                            "lualatex"
+                            "latexmk"
                         ]
                     }
                 ],
                 "latex-workshop.latex.tools": [
                     {
-                        "name": "lualatex",
-                        "command": "lualatex",
+                        "name": "latexmk",
+                        "command": "latexmk",
                         "args": [
-                            "-synctex=1",
                             "-interaction=nonstopmode",
                             "-file-line-error",
-                            "-output-directory=%OUTDIR%",
+                            "-synctex=1",
+                            "-outdir=%OUTDIR%",
                             "%DOC%"
                         ]
                     }

@@ -17,9 +17,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: src/main.tex
-          compiler: lualatex
-          # GitHub Actions 側でも src/out に出力するように指定
-          args: "-synctex=1 -interaction=nonstopmode -file-line-error -output-directory=src/out"
+          compiler: latexmk
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
