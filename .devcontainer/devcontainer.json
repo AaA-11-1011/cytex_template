@@ -17,7 +17,35 @@
                 "latex-workshop.latex.autoBuild.run": "onSave",
                 "latex-workshop.latex.outDir": "./out",
                 "latex-workshop.view.pdf.viewer": "tab",
-                "ltex.language": "ja-JP"
+                "ltex.language": "ja-JP",
+                "latex-workshop.latex.recipes": [
+                    {
+                        "name": "latexmk (auto)",
+                        "tools": [
+                            "latexmk"
+                        ]
+                    }
+                ],
+                "latex-workshop.latex.tools": [
+                    {
+                        "name": "latexmk",
+                        "command": "latexmk",
+                        "args": [
+                            "-interaction=nonstopmode",
+                            "-file-line-error",
+                            "-synctex=1",
+                            "-outdir=%OUTDIR%",
+                            "%DOC%"
+                        ]
+                    }
+                ],
+                "cSpell.words": [
+                    "cytex",
+                    "xelatex",
+                    "lualatex",
+                    "latexmk",
+                    "bxjsarticle"
+                ]
             }
         }
     }

@@ -1,17 +1,19 @@
-\documentclass[xelatex,ja=standard]{bxjsarticle}
+% !TEX program = lualatex
+\documentclass[lualatex,ja=standard]{bxjsarticle}
 
 \begin{document}
 
-\title{改善版 Cytex テンプレートによる文書}
+\title{改善版 Cytex テンプレート (LuaLaTeX対応)}
 \author{あなたの名前}
 \date{\today}
 \maketitle
 
 \section{はじめに}
-この環境は、VS Code と Docker を組み合わせて構築された最新の LaTeX 執筆環境です。
-GitHub にプッシュするだけで、自動的に PDF が生成されます。
+このファイルは、マジックコメント（1行目）によって \texttt{lualatex} を使うように指定されています。
+もし \texttt{xelatex} を使いたい場合は、1行目を \texttt{\% !TEX program = xelatex} に書き換え、
+クラスオプションの \texttt{lualatex} も \texttt{xelatex} に変更してください。
 
-\section{スニペットのテスト}
-ここに図や表を挿入する際は、\texttt{fig} や \texttt{table} というスニペットを活用してください。
+\section{自動判別の仕組み}
+リポジトリ直下の \texttt{.latexmkrc} がエンジンの切り替えを自動で行います。
 
 \end{document}
