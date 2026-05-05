@@ -2,7 +2,9 @@ services:
   tex-env:
     build: .
     volumes:
-      - .:/workdir
+      # docker-compose.yml が .devcontainer 内にあるため、
+      # 親ディレクトリ（プロジェクトルート）を /workdir にマウントする
+      - ..:/workdir
     # ホストとコンテナのファイル権限を同期させるための設定
     # USER_ID=${UID} を .env で指定可能
     user: "${USER_ID:-root}"

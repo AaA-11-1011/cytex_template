@@ -17,6 +17,8 @@
 3. 通知が出たら **[Reopen in Container]** を選択。
 4. `main.tex` を編集すると、`out/` フォルダに PDF が生成されます。
 
+※ コマンドラインからビルドする場合は、`.devcontainer` フォルダに移動してから `docker compose build` を実行してください。
+
 ### B. ブラウザで開発する場合 (GitHub Codespaces)
 1. GitHub リポジトリ画面の **[<> Code]** ボタンをクリック。
 2. **[Codespaces]** タブを選択し、**[Create codespace on main]** をクリック。
