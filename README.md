@@ -6,7 +6,6 @@
 - **爆速環境構築**: VS Code で開いて「Reopen in Container」を押すだけ。
 - **文章校正**: 日本語の文法チェック (LTeX) を同梱。
 - **自動ビルド**: 保存時に自動で PDF を更新。
-- **GitHub Actions**: プッシュ時に GitHub 上で自動的に PDF をビルド。
 - **スニペット**: `fig` や `table` と打つだけで複雑な LaTeX コードを挿入。
 
 ## セットアップ
