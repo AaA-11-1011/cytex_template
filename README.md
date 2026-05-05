@@ -15,7 +15,7 @@
 1. このテンプレートからリポジトリを作成。
 2. VS Code でプロジェクトを開き、推奨される拡張機能をインストール。
 3. 通知が出たら **[Reopen in Container]** を選択。
-4. `main.tex` を編集すると、`out/` フォルダに PDF が生成されます。
+4. `src/main.tex` を編集すると、`src/out/` フォルダに PDF が生成されます。
 
 ※ コマンドラインからビルドする場合は、`.devcontainer` フォルダに移動してから `docker compose build` を実行してください。
 

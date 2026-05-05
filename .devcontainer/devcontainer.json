@@ -15,7 +15,7 @@
             ],
             "settings": {
                 "latex-workshop.latex.autoBuild.run": "onSave",
-                "latex-workshop.latex.outDir": "./out",
+                "latex-workshop.latex.outDir": "%DIR%/out",
                 "latex-workshop.view.pdf.viewer": "tab",
                 "ltex.language": "ja-JP",
                 "latex-workshop.latex.recipes": [
@@ -34,6 +34,7 @@
                             "-synctex=1",
                             "-interaction=nonstopmode",
                             "-file-line-error",
+                            "-output-directory=%OUTDIR%",
                             "%DOC%"
                         ]
                     }
