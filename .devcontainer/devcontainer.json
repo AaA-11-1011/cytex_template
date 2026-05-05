@@ -1,0 +1,24 @@
+{
+    "name": "Improved Cytex Container",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "tex-env",
+    "workspaceFolder": "/workdir",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "James-Yu.latex-workshop",
+                "valentjn.vscode-ltex",
+                "streetsidesoftware.code-spell-checker",
+                "asabil.git-graph"
+            ],
+            "settings": {
+                "latex-workshop.latex.autoBuild.run": "onSave",
+                "latex-workshop.latex.outDir": "./out",
+                "latex-workshop.view.pdf.viewer": "tab",
+                "ltex.language": "ja-JP"
+            }
+        }
+    }
+}

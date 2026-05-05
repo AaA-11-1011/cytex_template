@@ -1,0 +1,32 @@
+{
+	"Figure Environment": {
+		"prefix": "fig",
+		"body": [
+			"\\begin{figure}[htbp]",
+			"\t\\centering",
+			"\t\\includegraphics[width=0.8\\linewidth]{${1:image_path}}",
+			"\t\\caption{${2:caption}}",
+			"\t\\label{fig:${3:label}}",
+			"\\end{figure}"
+		],
+		"description": "挿入用フィギュア環境のスニペット"
+	},
+	"Table Environment": {
+		"prefix": "table",
+		"body": [
+			"\\begin{table}[htbp]",
+			"\t\\centering",
+			"\t\\caption{${1:caption}}",
+			"\t\\label{tab:${2:label}}",
+			"\t\\begin{tabular}{${3:ccc}}",
+			"\t\t\\hline",
+			"\t\t${4:header1} & ${5:header2} & ${6:header3} \\\\",
+			"\t\t\\hline",
+			"\t\t${7:data1} & ${8:data2} & ${9:data3} \\\\",
+			"\t\t\\hline",
+			"\t\\end{tabular}",
+			"\\end{table}"
+		],
+		"description": "挿入用テーブル環境のスニペット"
+	}
+}

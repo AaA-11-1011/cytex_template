@@ -1,0 +1,10 @@
+services:
+  tex-env:
+    build: .
+    volumes:
+      - .:/workdir
+    # ホストとコンテナのファイル権限を同期させるための設定
+    # USER_ID=${UID} を .env で指定可能
+    user: "${USER_ID:-root}"
+    tty: true
+    stdin_open: true
